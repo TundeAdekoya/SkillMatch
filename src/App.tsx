@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
+import  {Route, Routes} from  'react-router-dom'
+import NavBar from './Common/NavBar'
+import Footer from './Common/Footer'
 // import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      </header>
+      <NavBar/>
+      <Footer/>
     </div>
   );
 }

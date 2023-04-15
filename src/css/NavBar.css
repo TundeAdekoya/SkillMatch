@@ -1,0 +1,159 @@
+#navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px  64px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#navBar .navLogo img{
+    width: 14vw;
+}
+
+#navBar .navLogoMobile{
+    display: none;
+}
+
+#navBar .navbarLinks{
+    display: flex;
+    gap: 48px;    
+}
+
+#navBar .navbarLinks .navbarLinksMenu{
+    color: var(--black-font);
+}
+
+#navBar .navbarLinks .navbarLinksMenu:hover, #navBar .navbarLinks .navbarLinksMenu:active{
+    color: var(--black-font-active);
+    cursor: pointer;
+}
+
+#navBar .navBtn button{
+    padding: 12px 32px;
+    background-color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#navBar .navBtn button:hover{
+    background-color: #ffff;
+    border: 1px solid var(--black-font-active);
+}
+
+#navBar .navToggle {
+    display: none;
+}
+
+
+
+
+/* responsivity */
+@media(max-width:767px){
+    #navBar .navBtn button{
+        display: none;
+    }
+
+    #navBar .navbarLinks{
+        display: none;
+    }
+
+    #navBar .navLogo{
+        display: none;
+    }
+    #navBar .navLogoMobile{
+        display: block;
+    }
+
+    #navBar .navLogoMobile img{
+        width: 80%;
+    }
+    
+
+    /* navbar toggler */
+
+    #navBar .navToggle{
+        position: absolute;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 6;  
+        margin: 0 auto;
+    }
+
+    #navBar .navToggle span{
+        height: 2px;
+        width: 24px;
+        background-color: var(--black-font-active);
+        position: absolute;
+    }
+
+    #navBar .navToggle span::before,
+    #navBar .navToggle span::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-font-active);
+        transition: all 0.3s ease;
+    }
+
+    #navBar .navToggle span::before{
+        left: 0;
+        transform: translateY(-8px);
+    }
+
+    #navBar .navToggle span::after{
+        right: 0;
+        transform: translateY(8px);
+    }
+
+    #navBar .navToggle:hover span::before,
+    #navBar .navToggle:hover span::after{
+        width: 50%;
+    }
+
+    /* ----------------------- */
+    .navbarLinksMobile {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        height: 100vh;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 16px 48px;
+      }
+    
+      .navbarLinksMobile.show {
+        display: flex;
+        gap: 24px;
+        margin: auto;
+        font-size: 14px;
+      }
+    
+      .navbarLinksMobile.show .navbarLinksMobileMenu {
+        padding: 16px;
+      }
+
+      .navbarLinksMobileMenu:hover{
+        background-color: var(--btn-color);
+        border-radius: 8px;
+      }
+
+}
+
+@media (min-width: 767px) {
+    #navBar .navbarLinksMobile{
+        display: none;
+    }
+}
