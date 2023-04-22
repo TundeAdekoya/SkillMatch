@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 32px  64px;
+    padding: 32px  64px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -51,6 +51,11 @@
 
 /* responsivity */
 @media(max-width:767px){
+    #navBar{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
     #navBar .navBtn button{
         display: none;
     }
@@ -65,11 +70,6 @@
     #navBar .navLogoMobile{
         display: block;
     }
-
-    #navBar .navLogoMobile img{
-        width: 80%;
-    }
-    
 
     /* navbar toggler */
 
@@ -148,6 +148,10 @@
       .navbarLinksMobileMenu:hover{
         background-color: var(--btn-color);
         border-radius: 8px;
+      }
+
+      .navbarLinksMobileMenu:active{
+        background-color: var(--btn-active);
       }
 
 }
