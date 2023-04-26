@@ -104,7 +104,8 @@ header{
     }
 
     .mobile-nav-cta{
-        background-color: #7B21E0;
+        /* background-color: #7B21E0; */
+        background: linear-gradient(to right, #9f70fe4b, #14b1ff55,#91ff0255);
         margin: 2px;
     }
 
@@ -131,7 +132,7 @@ header{
     }
 
     .plus-icon{
-        color: #DCFF02;
+        color: var(--black-font-active);
         font-size: 16px;
     }
 
@@ -141,5 +142,4 @@ header{
         margin: 2px;
     }
  
-
 }

@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react'
-import mobileLogo from '../Assets/miniIcon.svg'
+import mobileLogo from '../Assets/miniIcon2.svg'
 import mainLogo from '../Assets/icon.svg'
 import { Link, NavLink} from 'react-router-dom'
 import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
         <div className="navLogo w-32">
             <img src={mainLogo} alt="" />
         </div>
-        <div className="navLogoMobile w-8">
+        <div className="navLogoMobile w-32">
             <img src={mobileLogo} alt="" />
         </div>
 
