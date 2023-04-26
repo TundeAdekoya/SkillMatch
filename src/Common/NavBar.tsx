@@ -1,56 +1,41 @@
-import React, {useState} from 'react'
-import mainLogo from '../Assets/icon.svg'
+import React, {useState, useRef} from 'react'
 import mobileLogo from '../Assets/miniIcon.svg'
+import mainLogo from '../Assets/icon.svg'
 import { Link, NavLink} from 'react-router-dom'
+import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
 import '../css/NavBar.css'
 
-const NavBar = () => {
-
-    const [showLinks, setShowLinks] = useState(false)
-
-    const toggleMode = () =>{
-        if (showLinks === false) {
-            setShowLinks(true)
-        } else {
-            setShowLinks(true)
-        }
+const NavBar: React.FC = () => {
+    const navRef = useRef<HTMLDivElement>(null)
+    const showNavbar = () => {
+        if (navRef.current) {
+            navRef.current.classList.toggle('responsive_nav');
+          }
     }
-
   return (
-    <nav id='navBar'>
-        <div className="navLogo">
+    <header>
+        <div className="navLogo w-32">
             <img src={mainLogo} alt="" />
         </div>
-
-        <div className="navLogoMobile">
+        <div className="navLogoMobile w-8">
             <img src={mobileLogo} alt="" />
         </div>
 
-        <div className="navbarLinks">
+        <nav ref={navRef}>
             <NavLink className='navbarLinksMenu' to='/'>Developer</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>Product</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>About</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>FAQ</NavLink>
-        </div>
+            <Link to='/'><button className='navCta'>Join Waitlist</button></Link>
+            <button className= 'nav-btn nav-close-btn'  onClick={showNavbar}
+            ><FaTimes/></button>
+        </nav>
 
-        <div className={"navbarLinksMobile" + (showLinks ? " show" : "")}>
-            <NavLink onClick={() => setShowLinks(false)} className='navbarLinksMobileMenu' to='/'>Developer</NavLink>
-            <NavLink onClick={() => setShowLinks(false)} className='navbarLinksMobileMenu' to='/'>Product</NavLink>
-            <NavLink onClick={() => setShowLinks(false)} className='navbarLinksMobileMenu' to='/'>About</NavLink>
-            <NavLink onClick={() => setShowLinks(false)} className='navbarLinksMobileMenu' to='/'>FAQ</NavLink>
+        <div className="mobile-cta">
+            <Link to='/'><button className= 'nav-btn mobile-nav-cta p-2' ><FaPlus className='plus-icon'/></button></Link>
+            <button className= 'nav-btn p-2'  onClick={showNavbar}><FaBars className='bar-icon'/></button>
         </div>
-
-        <div className="navBtn">
-            <Link to='/'>            
-                <button>Join Waitlist</button>
-            </Link>
-        </div>
-
-        <button className='navToggle' onClick={() => setShowLinks(!showLinks)}>
-            <span></span>
-        </button>
-        
-    </nav>
+    </header>
   )
 }
 
