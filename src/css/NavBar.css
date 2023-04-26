@@ -59,7 +59,7 @@ header{
 
     header nav{
         position: fixed;
-        top: 0;
+        top: -100vh;
         left: 0;
         height: 100%;
         width: 100%;
@@ -76,7 +76,7 @@ header{
 
 
     header .responsive_nav {
-        transform: none;
+        transform:translateY(100vh);
     }
 
     .navLogo{
