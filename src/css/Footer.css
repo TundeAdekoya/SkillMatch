@@ -2,122 +2,80 @@
     background-color: var(--footer-backgorund);
 }
 
-#topFooter{
-    padding: 64px;
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-}
-
 .topFooterSubSection{
-    display: flex;
-    flex-direction: column;
-}
-
-.topFooterSubSection h3{
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 16px;
     color: var(--white-font);
+    margin-bottom: 64px;
 }
 
 .subscribeInput{
-    display: flex;
+    background-color: #80F58B;
+    color: var(--black-font-active);
+    width: 24vw;
+    margin: auto;
+    padding: 12px;
+    cursor: pointer;
 }
 
-.subscribeInput form{
-    display: flex;
-    align-items: center;
+.subscribeInput button{
+    font-size: 18px;
+}
+
+#toFooterLinkSection{
+    align-items: flex-start;
     justify-content: space-between;
-    margin: 16px 0px ;
-    gap: 16px;
-    border: 1px solid var(--white-font);
-    height: 8vh;
-    width: 100%;
-    border-radius: 100px;
-
-}
-
-.subscribeInput form input[type=email]{
-    width: 60%;
-    background-color: var(--footer-backgorund);
+    margin: 0px 20%;
     color: var(--white-font);
-    outline: none;
-    margin-left: 6px;
-
 }
 
-.subscribeInput form input[type=submit]{
-    margin-right: 6px;
-    background-color: var(--white-font);
-    color:var(--footer-backgorund) ;
-    border-radius: 100px;
-    width: 40%;
-    height: 6vh;
-    font-weight: 600;
+#toFooterLinkSection ul li{
     cursor: pointer;
-}
-
-.subscribeInput form input[type=submit]:active{
-    width: 36%;
-    height: 5vh;
-}
-
-#toFooterLinkSecrion {
-    display: flex;
-    gap: 64px;
-}
-
-#toFooterLinkSecrion ul li:nth-child(1){
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--white-font);
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#toFooterLinkSecrion ul li{
-    margin-top: 16px;
-    font-size: 15px;
-    color: var(--white-font);
-    cursor: pointer;
-}
-
-input::placeholder{
-    color: var(--white-font);
-    opacity: 0.7;
 }
 
 #bottomFooter{
-    padding: 0px 64px 64px 64px;
-   display: flex;
-   gap: 50px;
-   color: var(--white-font);
-   align-items: flex-end;
-   justify-content: end;
-}
-
-#bottomFooter {
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
 }
 
 #bottomFooter .text{
-    display: flex;
-    gap: 6px;
+    color: var(--white-font);
 }
 
-@media(max-width:767px){
-    #topFooter{
-        flex-direction: column;
+#bottomFooter img{
+    width: 50px;
+}
+
+.mobile{
+    display: none;
+}
+
+
+@media(max-width:818px){
+
+    .topFooterSubSection h3{
+        font-size: 30px;
     }
 
     .subscribeInput{
         width: 100%;
     }
 
-    #toFooterLinkSecrion{
-        flex-direction: column;
-        gap: 24px;
+    .web{
+        display: none;
     }
-    
+
+    .mobile{
+        display: block;
+    }
+
+    #toFooterLinkSection{
+       flex-direction: column;
+       align-items: center;
+       justify-content:center;
+       gap: 36px;
+       margin: 0px auto;
+       padding: 48px;
+    }
+
 }

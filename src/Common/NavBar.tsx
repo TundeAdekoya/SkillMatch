@@ -26,7 +26,7 @@ const NavBar: React.FC = () => {
             <NavLink className='navbarLinksMenu' to='/'>Product</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>About</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>FAQ</NavLink>
-            <Link to='/'><button className='navCta'>Join Waitlist</button></Link>
+            <Link to='/'><button className='navCta font-bold'>Join Waitlist</button></Link>
             <button className= 'nav-btn nav-close-btn'  onClick={showNavbar}
             ><FaTimes/></button>
         </nav>

@@ -4,12 +4,12 @@
 
 :root {
   --btn-color: #F6F6F6;
-  --white-font: #f8f8f8;
+  --white-font: #ffffff;
   --black-font: #454545;
   --light-grey: rgba(231, 231, 231, 0.216);
   --black-font-active: #1a1a1a;
   --btn-active: #f9f9f9;
-  --footer-backgorund: #7142D0;
+  --footer-backgorund: #171717;
 }
 
 body {

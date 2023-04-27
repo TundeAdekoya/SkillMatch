@@ -27,7 +27,7 @@ header{
 .navCta{
     margin-left: 24px;
     padding: 12px 32px;
-    background: linear-gradient(to right, #9f70fe4b, #14b1ff55,#91ff0255);
+    background: linear-gradient(to right, #75D3FF, #C8B2FF);
     cursor: pointer;
     border: 1px solid #fff;
     font-weight: 600;
@@ -45,7 +45,7 @@ header{
     display: none;
 }
 
-@media(max-width:768px){
+@media(max-width:818px){
 
     header{
         padding-top: 32px;
@@ -104,8 +104,7 @@ header{
     }
 
     .mobile-nav-cta{
-        /* background-color: #7B21E0; */
-        background: linear-gradient(to right, #9f70fe4b, #14b1ff55,#91ff0255);
+        background: linear-gradient(to right, #75D3FF, #C8B2FF);
         margin: 2px;
     }
 
