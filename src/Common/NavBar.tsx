@@ -3,6 +3,7 @@ import mobileLogo from '../Assets/miniIcon2.svg'
 import mainLogo from '../Assets/icon.svg'
 import { Link, NavLink} from 'react-router-dom'
 import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
+import {BsFillPersonFill} from'react-icons/bs'
 import '../css/NavBar.css'
 
 const NavBar: React.FC = () => {
@@ -32,7 +33,7 @@ const NavBar: React.FC = () => {
         </nav>
 
         <div className="mobile-cta">
-            <Link to='/'><button className= 'nav-btn mobile-nav-cta p-2' ><FaPlus className='plus-icon'/></button></Link>
+            <Link to='/'><button className= 'nav-btn mobile-nav-cta p-2' ><BsFillPersonFill className='contact-icon'/></button></Link>
             <button className= 'nav-btn p-2'  onClick={showNavbar}><FaBars className='bar-icon'/></button>
         </div>
     </header>

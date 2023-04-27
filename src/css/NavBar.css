@@ -130,8 +130,9 @@ header{
         color: var(--black-font-active);
     }
 
-    .plus-icon{
-        color: var(--black-font-active);
+    .contact-icon{
+        /* color: var(--black-font-active); */
+        color: #671bbc;
         font-size: 16px;
     }
 
