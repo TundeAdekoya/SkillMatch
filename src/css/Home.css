@@ -1,43 +1,49 @@
+
 #above-the-fold{
     margin: auto;
     padding: 48px;
-}
-
-#above-the-fold h1{
+  }
+  
+  #above-the-fold h1{
     font-size: 64px;
     text-align: center;
     font-weight: 600;
-}
-
-#above-the-fold h1 b{
+  }
+  
+  #above-the-fold h1 b{
     background: linear-gradient(90deg, #0083D4, #3F3EED);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-}
-
-#above-the-fold button{
+  }
+  
+  #above-the-fold button{
     border: 1px solid black;
     padding: 16px 24px;
     color: var(--white-font);
     font-weight: 600;
     background-color: var(--footer-backgorund);
-}
-
-#above-the-fold button:hover{
+  }
+  
+  #above-the-fold button:hover{
     transform: scale(.98);
     transition: 0.3s ease-in-out;
-}
+  }
+  
+  /* grid-begin */
+  #home-page-image-section{
+    gap: 8px;
+    margin: 48px 48px 90px 48px;
+    overflow: hidden;
+  }
 
-/* grid-begin */
-#home-page-image-section{
-    margin: 48px auto;
-    width: 100%;
-}
-
-/* Partner */
-
-.partner-container {
+  #home-page-image-section img{
+    width: 30%;
+  }
+  
+  /* Partner */
+  
+  .partner-container {
     margin: auto;
     height: 10vh;
     overflow: hidden;
@@ -48,15 +54,17 @@
   .partner {
     top: 0;
     left: 100%;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    animation: partner 30s linear infinite;
+    animation: partner 15s linear infinite;
+    gap: 128px;
+    z-index: -1;
   }
   
   .partner2 {
-    animation-delay: 15s;
+    animation-delay: 7s;
   }
   
   .partner img {
@@ -73,33 +81,53 @@
     }
   }
   
-#below-the-fold{
+  #below-the-fold{
     margin: 48px;
     overflow: hidden;
-}
-
-.below-the-fold-text h2{
+  }
+  
+  .below-the-fold-text h2{
     font-size: 36px;
-}
-
-.below-the-fold-image{
-    width: 100;
-} 
-
-.below-the-fold-image img{
+  }
+  
+  .below-the-fold-image{
     width: 100%;
-}
-
-@media(max-width:818px){
+  } 
+  
+  
+  @media(max-width:818px){
     #above-the-fold h1{
         font-size: 40px;
     }
 
+    #home-page-image-section {
+        margin: 48px 24px 48px 24px;
+    }
+
+    #home-page-image-section img{
+        width: 50%;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .partner {
+        gap: 48px;
+      }
+
+      .partner img {
+        padding-left: 56px;
+        width: 35%;
+      }
+      
+  
     .below-the-fold-text h2{
         font-size: 24px;
     }
-
+  
     #below-the-fold{
         margin: 0 48px 48px;
     }
-}
+
+  }
+  
+  

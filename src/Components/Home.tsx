@@ -4,6 +4,7 @@ import '../css/Home.css'
 import firstImage from '../Assets/jpg/first image.jpg'
 import secondImage from '../Assets/jpg/second image.jpg'
 import thirdImage from '../Assets/jpg/third image.jpg'
+import joinImage from '../Assets/jpg/joined image.jpg'
 import belowthefoldimage1 from '../Assets/jpg/belowthefoldimage1.jpg'
 import belowthefoldimage2 from '../Assets/jpg/belowthefoldimage2.jpg'
 import belowthefoldimage3 from '../Assets/jpg/belowthefoldimage3.jpg'
@@ -33,11 +34,14 @@ const Home = () => {
         <button>Be among the first, it’s free</button>
       </main>
 
-     <section id="home-page-image-section">
-            <img src={abovethefold} alt="" />
+     <section id="home-page-image-section" className='flex items-center justify-center'>
+            <img src={firstImage} alt="" />
+            <img src={secondImage} alt="" />
+            <img src={thirdImage} alt="" />
+            {/* <img src={joinImage} alt="" /> */}
       </section> 
 
-      <section className="position-relative partner-container d-none d-sm-block">
+      <section className="partner-container ">
         <div className="partner flex place-content-around">
           <img className='' src={partner1} alt="" />
           <img className='' src={partner2} alt="" />
