@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import '../css/Footer.css'
-import whiteIcon from '../Assets/logoIcon.svg'
+import whiteIcon from '../Assets/svg/logoIcon.svg'
 import { FaAngleDown } from 'react-icons/fa';
 
 const Footer:React.FC = () => {
@@ -62,7 +62,10 @@ const Footer:React.FC = () => {
               </ul>
               
               <ul className='mobile flex gap-4 flex-col'>
-                <li onClick={toggleVisibility1} className='flex items-center font-semibold justify-center	gap-4'>SkillMatch <div ><FaAngleDown /></div></li>
+                <div onClick={toggleVisibility1} className='flex items-center font-semibold justify-between'>
+                  <p>SkillMatch </p>
+                  <div className=''><FaAngleDown /></div>
+                </div>
                 <div 
                 className='flex flex-col gap-4 mt-6 mobile-nav-item'
                 ref={linkRef1}
@@ -77,7 +80,10 @@ const Footer:React.FC = () => {
               </ul>
               
               <ul className='mobile flex gap-4 flex-col mt-3'>
-                <li className='flex items-center font-semibold justify-center	gap-4' onClick={toggleVisibility2} >Talent <FaAngleDown /></li>
+              <div onClick={toggleVisibility2} className='flex items-center font-semibold justify-between'>
+                  <p>Talent</p>
+                  <div className=''><FaAngleDown /></div>
+                </div>
                 <div 
                 className='flex flex-col gap-4 mt-6 mobile-nav-item'
                 ref={linkRef2}
@@ -92,7 +98,10 @@ const Footer:React.FC = () => {
               </ul>
 
               <ul className='mobile flex gap-4 flex-col mt-3'>
-                <li className='flex items-center font-semibold justify-center	gap-4 ' onClick={toggleVisibility3} >Contact <FaAngleDown /></li>
+              <div onClick={toggleVisibility3} className='flex items-center font-semibold justify-between'>
+                  <p>Contact</p>
+                  <div className=''><FaAngleDown /></div>
+                </div>
                 <div 
                 className='flex flex-col gap-4 mt-6 mobile-nav-item'
                 ref={linkRef3}

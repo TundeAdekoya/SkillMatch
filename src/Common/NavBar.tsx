@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
-import mobileLogo from '../Assets/miniIcon2.svg'
-import mainLogo from '../Assets/icon.svg'
+import mobileLogo from '../Assets/svg/miniIcon2.svg'
+import mainLogo from '../Assets/svg/icon.svg'
 import { Link, NavLink} from 'react-router-dom'
 import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
 import {BsFillPersonFill} from'react-icons/bs'

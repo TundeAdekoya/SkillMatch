@@ -27,14 +27,15 @@ header{
 .navCta{
     margin-left: 24px;
     padding: 12px 32px;
-    background: linear-gradient(to right, #75D3FF, #C8B2FF);
+    background-color: white;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: 1px solid var(--black-font-active);
     font-weight: 600;
 }
 
-.navCta:active{
+.navCta:hover{
     transform: scale(.98);
+    transition: 0.3s ease-in-out;
 }
 
 .nav-btn{
@@ -104,7 +105,7 @@ header{
     }
 
     .mobile-nav-cta{
-        background: linear-gradient(to right, #75D3FF, #C8B2FF);
+        background-color: #2CBDFF;
         margin: 2px;
     }
 
@@ -131,8 +132,7 @@ header{
     }
 
     .contact-icon{
-        /* color: var(--black-font-active); */
-        color: #671bbc;
+        color: #064A74;
         font-size: 16px;
     }
 
