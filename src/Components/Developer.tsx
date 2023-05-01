@@ -3,9 +3,9 @@ import '../css/Developer.css'
 import searchIcon from '../Assets/svg/searchIcon.svg'
 import getIcon from '../Assets/svg/getIcon.svg'
 
-import discoverimage1 from '../Assets/png/discoverImage1.png'
-import discoverimage2 from '../Assets/png/discoverImage2.png'
-import discoverimage3 from '../Assets/png/discoverImage3.png'
+import discoverimage1 from '../Assets/svg/discoverImage1.svg'
+import discoverimage2 from '../Assets/svg/discoverImage2.svg'
+import discoverimage3 from '../Assets/svg/discoverImage3.svg'
 
 
 

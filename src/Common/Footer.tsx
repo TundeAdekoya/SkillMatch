@@ -46,7 +46,7 @@ const Footer:React.FC = () => {
                 <li className='font-semibold'>SkillMatch</li>
                 <li>Developer</li>
                 <li>Product</li>
-                <li>About</li>
+                <li>Talent</li>
                 <li>FAQ</li>
               </ul>
 
@@ -75,7 +75,7 @@ const Footer:React.FC = () => {
                   transition: "height 1s ease-in-out, opacity 1s ease-in-out",
                   overflow: "hidden",
                 }}>
-                  <li>Developer</li><li>Product</li><li>About</li><li>FAQ</li>
+                  <li>Developer</li><li>Product</li><li>Talent</li><li>FAQ</li>
                 </div>
               </ul>
               

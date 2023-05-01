@@ -50,7 +50,6 @@ const Home = () => {
           <img className='' src={partner5} alt="" />
           <img className='' src={partner6} alt="" />
           <img className='' src={partner7} alt="" />
-          <img className='' src={partner8} alt="" />
         </div>
         <div className="partner partner2 flex place-content-around">
           <img className='' src={partner1} alt="" />
@@ -60,7 +59,6 @@ const Home = () => {
           <img className='' src={partner5} alt="" />
           <img className='' src={partner6} alt="" />
           <img className='' src={partner7} alt="" />
-          <img className='' src={partner8} alt="" />
         </div>
       </section>
 

@@ -44,11 +44,12 @@
   /* Partner */
   
   .partner-container {
-    margin: auto;
+    margin: 0px auto;
     height: 10vh;
     overflow: hidden;
     line-height: 30px;
     position: relative;
+    width: 100%;
   }
   
   .partner {
@@ -59,17 +60,23 @@
     position: absolute;
     white-space: nowrap;
     animation: partner 15s linear infinite;
-    gap: 128px;
+    gap: 10%;
     z-index: -1;
+    margin-right: 8vw;
   }
   
   .partner2 {
     animation-delay: 7s;
+    background-color: #fff;
   }
   
   .partner img {
-    padding-left: 32px;
-    width: 25%;
+    /* padding-left: 32px; */
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    width: 8%;
   }
   
   @keyframes partner {
@@ -110,22 +117,12 @@
         object-fit: cover;
     }
 
-    .partner {
-        gap: 48px;
-      }
-
-      .partner img {
-        padding-left: 56px;
-        width: 35%;
-      }
-      
-  
     .below-the-fold-text h2{
         font-size: 24px;
     }
   
     #below-the-fold{
-        margin: 0 48px 48px;
+        margin: 0px 48px 48px 48px;
     }
 
     .below-the-fold-image{

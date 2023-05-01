@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background-color: red; */
+  }
+  
+  .hover-target {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: blue;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover-target:hover + .hover-effect {
+    opacity: 0.5;
+  }
+  
