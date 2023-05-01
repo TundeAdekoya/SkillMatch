@@ -1,0 +1,68 @@
+#product{
+    padding: 48px;    
+}
+
+#product .green{
+    background-color: #B7FBBD;
+    width: 45vw;
+    height:45vw;
+}
+#product .cyan{
+    background-color: #B6E5FF;
+    width: 45vw;
+    height:45vw;
+}
+#product .blue{
+    background-color: #C4D3FF;
+    width: 45vw;
+    height:45vw;
+}
+#product .purple{
+    background-color: #DFD5FF;
+    width: 45vw;
+    height:45vw;
+}
+
+.green .product-text{
+    color: #105719;
+}
+.cyan .product-text{
+    color: #064A74;
+}
+.blue .product-text{
+    color: #2A2C85;
+}
+.purple .product-text{
+    color: #551999;
+}
+
+
+.product-text h1{
+    font-size: 136px;
+    font-weight: 900;
+} 
+
+.product-text h1 span{
+    font-size: 64px;
+}
+
+.product-text h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product-text{
+    text-align: center;
+}
+
+
+@media(max-width:818px){
+    .product-container{
+        flex-direction: column;
+    }
+
+    #product .green, #product .cyan, #product .blue, #product .purple{
+        width: 90vw;
+        height: 90vw;
+    }
+}

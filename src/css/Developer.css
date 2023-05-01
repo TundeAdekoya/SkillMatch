@@ -1,0 +1,40 @@
+#developer{
+    padding: 48px;
+    background-color: #F4F4F4;
+}
+
+#developer-title{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.dev-icon img{
+    background-color: #EDEDED;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+.dev-icon h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dev-content-title-text p{
+    font-size: 18px;
+}
+
+
+
+@media(max-width:818px){
+    #developer-title{
+        font-size: 32px;
+    }
+
+    .dev-content-title-text p{
+        font-size: 16px;
+    }
+
+    .dev-text-3 h3{
+        text-align: center;
+    }
+}

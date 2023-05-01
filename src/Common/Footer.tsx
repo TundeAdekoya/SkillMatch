@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import '../css/Footer.css'
 import whiteIcon from '../Assets/svg/logoIcon.svg'
-import { FaAngleDown } from 'react-icons/fa';
+import { AiOutlineArrowDown } from 'react-icons/ai';
 
 const Footer:React.FC = () => {
 
@@ -64,7 +64,7 @@ const Footer:React.FC = () => {
               <ul className='mobile flex gap-4 flex-col'>
                 <div onClick={toggleVisibility1} className='flex items-center font-semibold justify-between'>
                   <p>SkillMatch </p>
-                  <div className=''><FaAngleDown /></div>
+                  <div className=''><AiOutlineArrowDown /></div>
                 </div>
                 <div 
                 className='flex flex-col gap-4 mt-6 mobile-nav-item'
@@ -82,7 +82,7 @@ const Footer:React.FC = () => {
               <ul className='mobile flex gap-4 flex-col mt-3'>
               <div onClick={toggleVisibility2} className='flex items-center font-semibold justify-between'>
                   <p>Talent</p>
-                  <div className=''><FaAngleDown /></div>
+                  <div className=''><AiOutlineArrowDown /></div>
                 </div>
                 <div 
                 className='flex flex-col gap-4 mt-6 mobile-nav-item'
@@ -100,7 +100,7 @@ const Footer:React.FC = () => {
               <ul className='mobile flex gap-4 flex-col mt-3'>
               <div onClick={toggleVisibility3} className='flex items-center font-semibold justify-between'>
                   <p>Contact</p>
-                  <div className=''><FaAngleDown /></div>
+                  <div className=''><AiOutlineArrowDown /></div>
                 </div>
                 <div 
                 className='flex flex-col gap-4 mt-6 mobile-nav-item'
