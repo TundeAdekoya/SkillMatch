@@ -1,4 +1,5 @@
 #product{
+    margin: 48px 0;
     padding: 48px;    
 }
 
@@ -38,7 +39,7 @@
 
 
 .product-text h1{
-    font-size: 136px;
+    font-size: 200px;
     font-weight: 900;
 } 
 
@@ -65,4 +66,9 @@
         width: 90vw;
         height: 90vw;
     }
+
+    .product-text h1{
+        font-size: 124px;
+    } 
+    
 }

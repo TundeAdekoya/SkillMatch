@@ -17,7 +17,7 @@ const Developer = () => {
       </section>
 
       <section id="developer-content">
-          <div className='mt-12'>
+          <div className='mt-16'>
               <section className="developer-content-title">
                 <div className="dev-icon flex gap-2 items-center mb-2 ">
                   <div className="dev-image-container">
@@ -38,7 +38,7 @@ const Developer = () => {
       </section>
 
       <section id="developer-content">
-          <div className='mt-20'>
+          <div className='mt-24'>
               <section className="developer-content-title">
                 <div className="dev-icon flex gap-2 items-center mb-2">
                   <div className="dev-image-container">
@@ -60,7 +60,7 @@ const Developer = () => {
       </section>
 
       <section id="developer-content">
-          <div className='mt-20'>
+          <div className='mt-24'>
               <section className="developer-content-title font-semibold	">
                 <div className="dev-icon dev-text-3">
                   <h3>Find Your Candidate</h3>

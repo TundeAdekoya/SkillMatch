@@ -1,21 +1,15 @@
 import React from 'react';
 import NavBar from './Common/NavBar'
 import Footer from './Common/Footer'
-import Test from './Components/Component'
-import Home from './Components/Home'
-import Developer from './Components/Developer'
-import Product from './Components/Product'
-import Talent from './Components/Talent'
+// import Test from './Components/Component'
+import SinglePage from './Screen/SinglePage';
 // import './App.css';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Home/>
-      <Developer/>
-      <Product/>
-      <Talent/>
+      < SinglePage/>
       {/* <Test/> */}
       <Footer/>
     </div>

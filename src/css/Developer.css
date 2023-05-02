@@ -1,6 +1,7 @@
 #developer{
-    padding: 48px;
+    padding: 80px 48px;
     background-color: #F4F4F4;
+    margin-top: 120px;
 }
 
 #developer-title{
@@ -27,7 +28,7 @@
 
 @media(max-width:818px){
     #developer-title{
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .dev-content-title-text p{

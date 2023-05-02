@@ -25,7 +25,7 @@ import gridlines from '../Assets/svg/gridlines.svg'
 
 const Home = () => {
   return (
-    <div id='HomePage'>
+    <div id='homePage'>
 
       <main id="above-the-fold" className='flex items-center justify-center flex-col my-10'>
         <div className="text-section mb-9">
@@ -38,10 +38,9 @@ const Home = () => {
             <img src={firstImage} alt="" />
             <img src={secondImage} alt="" />
             <img src={thirdImage} alt="" />
-            {/* <img src={joinImage} alt="" /> */}
       </section> 
 
-      <section className="partner-container ">
+      <section className="partner-container">
         <div className="partner flex place-content-around">
           <img className='' src={partner1} alt="" />
           <img className='' src={partner2} alt="" />
@@ -67,14 +66,18 @@ const Home = () => {
           <h2 className='flex flex-col font-semibold'>
             <span className=''>Prove ownership of your GitHub, Behance,</span>
             <span className=''>Dribble and Stack Overflow profile and check</span>  
-            <span className='mb-6'>your ranking against other talents for free.</span>
+            <span className='mb-10'>your ranking against other talents for free.</span>
           </h2>
         </div>
-        <div className="below-the-fold-image flex gap-6 justify-center items-center">
-          <img src={belowthefoldimage1} alt="" />
-          <img src={belowthefoldimage2} alt="" />
-          <img src={belowthefoldimage3} alt="" />
-          <img src={belowthefoldimage4} alt="" />
+        <div className="below-the-fold-image flex justify-center items-center gap-2">
+          <div className=" flex justify-center items-center gap-2">
+            <img src={belowthefoldimage1} alt="" />
+            <img src={belowthefoldimage2} alt="" />
+          </div>
+          <div className="flex justify-center items-center gap-2">
+            <img src={belowthefoldimage3} alt="" />
+            <img src={belowthefoldimage4} alt="" />
+          </div>
         </div>
       </section>
 

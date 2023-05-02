@@ -1,57 +1,56 @@
-
 #above-the-fold{
     margin: auto;
     padding: 48px;
   }
   
-  #above-the-fold h1{
-    font-size: 64px;
-    text-align: center;
-    font-weight: 600;
-  }
+#above-the-fold h1{
+  font-size: 64px;
+  text-align: center;
+  font-weight: 600;
+}
   
-  #above-the-fold h1 b{
-    background: linear-gradient(90deg, #0083D4, #3F3EED);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-  }
+#above-the-fold h1 b{
+  background: linear-gradient(90deg, #0083D4, #3F3EED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
   
-  #above-the-fold button{
-    border: 1px solid black;
-    padding: 16px 24px;
-    color: var(--white-font);
-    font-weight: 600;
-    background-color: var(--footer-backgorund);
-  }
+#above-the-fold button{
+  border: 1px solid black;
+  padding: 16px 24px;
+  color: var(--white-font);
+  font-weight: 600;
+  background-color: var(--footer-backgorund);
+}
   
-  #above-the-fold button:hover{
-    transform: scale(.98);
-    transition: 0.3s ease-in-out;
-  }
+#above-the-fold button:hover{
+  transform: scale(.98);
+  transition: 0.3s ease-in-out;
+}
   
-  /* grid-begin */
-  #home-page-image-section{
-    gap: 8px;
-    margin: 48px 48px 90px 48px;
-    overflow: hidden;
-  }
+/* grid-begin */
+#home-page-image-section{
+  gap: 8px;
+  margin: 48px 48px 80px 48px;
+  overflow: hidden;
+}
 
-  #home-page-image-section img{
-    width: 30%;
-  }
-  
-  /* Partner */
-  
-  .partner-container {
-    margin: 0px auto;
-    height: 10vh;
-    overflow: hidden;
-    line-height: 30px;
-    position: relative;
-    width: 100%;
-  }
-  
+#home-page-image-section img{
+  width: 30%;
+}
+
+/* Partner */
+
+.partner-container {
+  margin: 64px auto;
+  height: 4rem;
+  overflow: hidden;
+  line-height: 30px;
+  position: relative;
+  width: 100%;
+}
+
   .partner {
     top: 0;
     left: 100%;
@@ -89,20 +88,19 @@
   }
   
   #below-the-fold{
-    margin: 48px;
     overflow: hidden;
   }
   
   .below-the-fold-text h2{
-    font-size: 36px;
+    font-size: 32px;
   }
   
   .below-the-fold-image{
-    width: 100%;
+    width: 100vw;
   } 
   
   
-  @media(max-width:818px){
+@media(max-width:818px){
     #above-the-fold h1{
         font-size: 40px;
     }
@@ -126,9 +124,12 @@
     }
 
     .below-the-fold-image{
-        gap: 10px;
+        flex-direction: column;
     }
-
+}
+  
+@media(max-width:500px){
+  .partner-container {
+    margin: 0px auto;
   }
-  
-  
+}  
