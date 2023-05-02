@@ -15,13 +15,17 @@
     border-radius: 2px;
 }
 
-.dev-icon h3{
-    font-size: 28px;
-    font-weight: 600;
+.dev-icon h3, .dev-text-3 h3{
+    font-size: 24px;
 }
 
 .dev-content-title-text p{
     font-size: 18px;
+    color: #757575;
+}
+
+.dev-text-3 h3{
+    /* text-align: center; */
 }
 
 
@@ -36,6 +40,6 @@
     }
 
     .dev-text-3 h3{
-        text-align: center;
+        /* text-align: center; */
     }
 }

@@ -95,7 +95,7 @@ const FAQ:React.FC = () => {
         </div>
       </ul>
 
-      <ul className='flex gap-4 flex-col mt-3 mb-8'>
+      <ul className='flex gap-4 flex-col mt-3 mb-16'>
           <div onClick={toggleVisibility4} className='line flex items-center font-semibold justify-between'>
               <p>Is SkillMatch credible?</p>
               <div className='cursor-pointer'><AiOutlineArrowDown /></div>

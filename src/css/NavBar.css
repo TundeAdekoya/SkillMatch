@@ -98,6 +98,7 @@ header{
         position: fixed;
         top: 1.2rem;
         right: 2rem;
+        z-index: 1;
     }
     
     .navCta{
@@ -126,7 +127,7 @@ header{
 
     .navCta{
         margin-top: 24px;
-        padding: 24px 32vw;
+        padding: 24px 24vw;
         font-size: 24px;
         color: var(--black-font-active);
     }

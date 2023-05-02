@@ -61,7 +61,7 @@ const Developer = () => {
 
       <section id="developer-content">
           <div className='mt-24'>
-              <section className="developer-content-title font-semibold	">
+              <section className="developer-content-title	">
                 <div className="dev-icon dev-text-3">
                   <h3>Find Your Candidate</h3>
                 </div>

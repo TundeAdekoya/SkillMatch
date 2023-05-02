@@ -28,7 +28,7 @@ const Talent = () => {
         </h2>
       </section>
 
-        <section className="talent-container ">
+        {/* <section className="talent-container ">
           <div className="talent-slow flex place-content-around">
             <img className='' src={roundoneimage1} alt="" />
             <img className='' src={roundoneimage2} alt="" />
@@ -37,7 +37,7 @@ const Talent = () => {
             <img className='' src={roundoneimage1} alt="" />
             <img className='' src={roundoneimage2} alt="" />
           </div>
-        </section>
+        </section> */}
         <section className="talent-container talent-img ">
           <div className="talent flex place-content-around">
             <img className='' src={roundtwoimage1} alt="" />

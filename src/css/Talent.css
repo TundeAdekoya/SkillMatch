@@ -58,13 +58,13 @@
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    animation: talent 90s linear infinite;
+    animation: talent 100s linear infinite;
     background-color: white;
     z-index: -1;
 }
 
 .talent-slow2 {
-    animation-delay:45s;
+    animation-delay:50s;
     background-color: white;   
 }
 
@@ -89,9 +89,6 @@
 
 
 @media(max-width:500px){
-    .talent-container {
-        /* height: 300px; */
-    }
 
     .talent-text h2{
         font-size: 28px;    
