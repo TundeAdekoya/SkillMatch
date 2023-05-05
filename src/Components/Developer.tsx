@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Developer.css'
 import searchIcon from '../Assets/svg/searchIcon.svg'
 import getIcon from '../Assets/svg/getIcon.svg'
-import contactIcon from '../Assets/svg/contactIcon.svg'
+import person from '../Assets/svg/Person.svg'
 
 import discoverimage1 from '../Assets/svg/discoverImage1.svg'
 import discoverimage2 from '../Assets/svg/discoverImage2.svg'
@@ -65,7 +65,7 @@ const Developer = () => {
               <section className="developer-content-title	">
               <div className="dev-icon flex gap-2 items-center mb-2">
                   <div className="dev-image-container">
-                    <img src={contactIcon} alt="" />
+                    <img src={person}  alt="" />
                   </div>  
                   <h3>Find your Candidate</h3>
                 </div>
