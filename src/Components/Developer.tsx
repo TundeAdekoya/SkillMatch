@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Developer.css'
 import searchIcon from '../Assets/svg/searchIcon.svg'
 import getIcon from '../Assets/svg/getIcon.svg'
+import candidateIcon from '../Assets/svg/candidateIcon.svg'
 
 import discoverimage1 from '../Assets/svg/discoverImage1.svg'
 import discoverimage2 from '../Assets/svg/discoverImage2.svg'
@@ -62,8 +63,17 @@ const Developer = () => {
       <section id="developer-content">
           <div className='mt-24'>
               <section className="developer-content-title	">
-                <div className="dev-icon dev-text-3">
-                  <h3>Find Your Candidate</h3>
+              <div className="dev-icon flex gap-2 items-center mb-2">
+                  <div className="dev-image-container">
+                    <img src={candidateIcon} alt="" />
+                  </div>  
+                  <h3>Find your Candidate</h3>
+                </div>
+                <div className="dev-content-title-text">
+                  <p className='flex flex-col'>
+                    <span>Stop settling for mediocre talent. Take action today to </span>
+                    <span>find the perfect candidate for your team's success.</span>
+                  </p>
                 </div>
               </section>
               <section className="developer-content-image mt-10">
