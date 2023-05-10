@@ -2,28 +2,28 @@ import React, { useState, useRef } from 'react';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import '../css/FAQ.css'
 
-const FAQ:React.FC = () => {
+const FAQ = () => {
 
   const [isVisible1, setIsVisible1] = useState(false)
-  const linkRef1 = useRef<HTMLDivElement>(null);
+  const linkRef1 = useRef(null);
   const toggleVisibility1 = () => {
       setIsVisible1(!isVisible1)
   }
 
   const [isVisible2, setIsVisible2] = useState(false)
-  const linkRef2 = useRef<HTMLDivElement>(null);
+  const linkRef2 = useRef(null);
   const toggleVisibility2 = () => {
       setIsVisible2(!isVisible2)
   }
 
   const [isVisible3, setIsVisible3] = useState(false)
-  const linkRef3 = useRef<HTMLDivElement>(null);
+  const linkRef3 = useRef(null);
   const toggleVisibility3 = () => {
       setIsVisible3(!isVisible3)
   }
 
   const [isVisible4, setIsVisible4] = useState(false)
-  const linkRef4 = useRef<HTMLDivElement>(null);
+  const linkRef4 = useRef(null);
   const toggleVisibility4 = () => {
       setIsVisible4(!isVisible4)
   }
@@ -47,7 +47,7 @@ const FAQ:React.FC = () => {
           style={{
             height: isVisible1 ? linkRef1.current?.scrollHeight : 0,
             opacity: isVisible1 ? 1 : 0,
-            transition: "height 1s ease-in-out, opacity 1s ease-in-out",
+            transition: "height 0.5s ease-in-out, opacity 1s ease-in-out",
             overflow: "hidden",
           }}>
             <p className='slide-down-text'>SkillMatch is a pre-employment developer and designer assessment platform that allows companies to hire talent by assessing their hard and soft skills on GitHub, Behance, Dribble and Stack Overflow.</p>

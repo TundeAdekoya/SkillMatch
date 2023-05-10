@@ -3,30 +3,30 @@ import '../css/Footer.css'
 import whiteIcon from '../Assets/svg/logoIcon.svg'
 import { AiOutlineArrowDown } from 'react-icons/ai';
 
-const Footer:React.FC = () => {
+const Footer = () => {
 
   const year = new Date().getFullYear();
 
   const [isVisible1, setIsVisible1] = useState(false)
-  const linkRef1 = useRef<HTMLDivElement>(null);
+  const linkRef1 = useRef(null);
   const toggleVisibility1 = () => {
       setIsVisible1(!isVisible1)
   }
 
   const [isVisible2, setIsVisible2] = useState(false)
-  const linkRef2 = useRef<HTMLDivElement>(null);
+  const linkRef2 = useRef(null);
   const toggleVisibility2 = () => {
       setIsVisible2(!isVisible2)
   }
 
   const [isVisible3, setIsVisible3] = useState(false)
-  const linkRef3 = useRef<HTMLDivElement>(null);
+  const linkRef3 = useRef(null);
   const toggleVisibility3 = () => {
       setIsVisible3(!isVisible3)
   }
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);

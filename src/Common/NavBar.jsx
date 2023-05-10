@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import mobileLogo from '../Assets/svg/miniIcon2.svg'
 import mainLogo from '../Assets/svg/icon.svg'
 import { Link, NavLink} from 'react-router-dom'
@@ -6,8 +6,13 @@ import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
 import {BsFillPersonFill} from'react-icons/bs'
 import '../css/NavBar.css'
 
-const NavBar: React.FC = () => {
-    const navRef = useRef<HTMLDivElement>(null)
+const NavBar = ({timeline, ease}) => {
+
+    let logo = useRef(null);
+    let menu = useRef(null);
+    let mobileCta = useRef(null);
+    
+    const navRef = useRef(null);
     const showNavbar = () => {
         if (navRef.current) {
             navRef.current.classList.toggle('responsive_nav');
@@ -22,7 +27,7 @@ const NavBar: React.FC = () => {
             <img src={mobileLogo} alt="" />
         </div>
 
-        <nav ref={navRef}>
+        <nav ref={navRef}> 
             <NavLink className='navbarLinksMenu' to='/'>Developer</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>Product</NavLink>
             <NavLink className='navbarLinksMenu' to='/'>Talent</NavLink>

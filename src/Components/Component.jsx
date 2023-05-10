@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import '../css/Component.css'
 
 
-const Component: React.FC = () => {
+const Component = () => {
 
   return (
   <div className="container">
