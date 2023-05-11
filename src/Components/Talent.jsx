@@ -1,6 +1,7 @@
-import React from 'react'
-
+import {React, useEffect, useState, useRef} from 'react'
 import '../css/Talent.css'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import roundoneimage1 from '../Assets/png/1st round/one.png'
 import roundoneimage2 from '../Assets/png/1st round/two.png'
@@ -18,26 +19,38 @@ import roundfiveimage1 from '../Assets/png/5th round/one.png'
 import roundfiveimage2 from '../Assets/png/5th round/two.png'
 
 
+gsap.registerPlugin(ScrollTrigger);
 const Talent = () => {
+
+  let talTitle = useRef(null)
+
+  useEffect(() => {
+
+    gsap.fromTo(talTitle.current, 
+      {scale: 0, opacity:0}, 
+      {scale:.8, 
+        opacity:1,
+        ease: "back.out",
+        scrollTrigger: {
+          trigger: talTitle.current,
+          start: "1px 100%", 
+          end: "bottom 1%",
+          toggleActions: 'restart pause reverse reset',
+          scrub: true,
+        } 
+      })
+      
+  }, [])
+
   return (
-    <div id='talent-page'>
-      <section className="talent-text flex ">
+    <div id='talent-page' className='overflow-hidden'>
+      <section className="talent-text flex opacity-0" ref={talTitle}>
         <h2 className='flex flex-col'>
           <span>Are you in search of the next</span>
           <span>generation of tech talent?</span>
         </h2>
       </section>
 
-        {/* <section className="talent-container ">
-          <div className="talent-slow flex place-content-around">
-            <img className='' src={roundoneimage1} alt="" />
-            <img className='' src={roundoneimage2} alt="" />
-          </div>
-          <div className="talent-slow talent-slow2 flex place-content-around">
-            <img className='' src={roundoneimage1} alt="" />
-            <img className='' src={roundoneimage2} alt="" />
-          </div>
-        </section> */}
         <section className="talent-container talent-img ">
           <div className="talent flex place-content-around">
             <img className='' src={roundtwoimage1} alt="" />

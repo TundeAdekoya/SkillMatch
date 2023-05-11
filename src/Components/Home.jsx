@@ -1,5 +1,8 @@
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import '../css/Home.css'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 import firstImage from '../Assets/jpg/first image.jpg'
 import secondImage from '../Assets/jpg/second image.jpg'
@@ -17,27 +20,95 @@ import partner4 from '../Assets/svg/partner4.svg'
 import partner5 from '../Assets/svg/partner5.svg'
 import partner6 from '../Assets/svg/partner6.svg'
 import partner7 from '../Assets/svg/partner7.svg'
-import partner8 from '../Assets/svg/partner8.svg'
-import abovethefold from '../Assets/svg/abovethefold.svg'
-import partner10 from '../Assets/svg/partner10.svg'
-import gridlines from '../Assets/svg/gridlines.svg'
 
-
+gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
-  return (
-    <div id='homePage'>
 
-      <main id="above-the-fold" className='flex items-center justify-center flex-col my-10'>
+  let homepage = useRef(null)
+  let aboveTheFoldText = useRef(null)
+  let aboveTheFoldImage = useRef(null)
+  let button = useRef(null)
+  let imageOne = useRef(null)
+  let imageTwo = useRef(null)
+  let imageThree = useRef(null)
+  let belowTheFoldText = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(button.current, 
+      {
+        skewX: 0,
+        skewY: 0,
+      },
+      {
+        skewX: 5,
+        skewY: 2.5,
+        duration: 20,
+        ease: "back.out",
+        scrollTrigger: {
+          trigger: [button.current,],
+          start: "1px 8%", //animation starts when the top of myDiv hits the center of the viewport
+          end: "30px 30%",
+          toggleActions: 'restart pause reverse reset',
+          scrub: true, //animation follows the scroll position smoothly
+        },})
+
+    gsap.fromTo([imageOne.current, imageTwo.current, imageThree.current], 
+      {
+        yPercent: 0, scale:1,
+      },
+      {
+        scale:.7,
+        yPercent: 20,
+        duration: 5,
+        ease: "back.out",
+        stagger:{amount:.7},
+        scrollTrigger: {
+          trigger: [imageOne.current, imageTwo.current, imageThree.current,],
+          start: "top 60%", 
+          end: "bottom 1%",
+          toggleActions: 'restart pause reverse reset',
+          scrub: true, 
+        },})
+
+    gsap.fromTo(belowTheFoldText.current, 
+        {opacity: 0, y:150, scale:0}, 
+        {opacity:1,
+          duration: 5, 
+          y:0,
+          scale:.8,
+          ease: "back.out",
+          scrollTrigger: {
+            trigger: belowTheFoldText.current,
+            start: "1px 100%", 
+            end: "bottom  60%",
+            toggleActions: 'restart pause reverse reset',
+            scrub: true,
+          } 
+        })
+
+      gsap.timeline()
+        .fromTo(homepage.current, {opacity:0}, {duration:1.5, opacity:1})
+        .fromTo(aboveTheFoldText.current, {opacity:0, scale:0.8, ease:'back'}, {duration:.8, opacity:1, scale:1})
+        .fromTo(aboveTheFoldImage.current, {opacity:0, ease:'back'}, {duration:.8, opacity:1 })
+        
+  }, [])
+  
+
+
+  return (
+    <div id='homePage' ref={homepage} className='overflow-hidden'>
+
+      <main id="above-the-fold" className='flex items-center justify-center flex-col my-10' ref={aboveTheFoldText}>
         <div className="text-section mb-9">
-          <h1 className='flex flex-col'>levelling the playing <span> field for <b>Techies</b></span></h1>
+          <h1  className='flex flex-col'>levelling the playing <span> field for <b>Techies</b></span></h1>
         </div>
-        <button>Be among the first, it’s free</button>
+        <button ref={button}>Be among the first, it’s free</button>
       </main>
 
-     <section id="home-page-image-section" className='flex items-center justify-center'>
-            <img src={firstImage} alt="" />
-            <img src={secondImage} alt="" />
-            <img src={thirdImage} alt="" />
+     <section id="home-page-image-section" className='flex items-center justify-center' ref={aboveTheFoldImage}>
+            <img src={firstImage} ref={imageOne} alt="" />
+            <img src={secondImage} ref={imageTwo} alt="" />
+            <img src={thirdImage} ref={imageThree} alt="" />
       </section> 
 
       <section className="partner-container">
@@ -61,8 +132,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="below-the-fold" className='flex flex-col justify-center items-center'>
-        <div className="below-the-fold-text mx-auto">
+      <section id="below-the-fold" className='flex flex-col justify-center items-center opacity-0' ref={belowTheFoldText}>
+        <div className="below-the-fold-text mx-auto" >
           <h2 className='flex flex-col font-semibold'>
             <span className=''>Prove ownership of your GitHub, Behance,</span>
             <span className=''>Dribble and Stack Overflow profile and check</span>  

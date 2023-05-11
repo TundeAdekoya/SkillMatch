@@ -6,6 +6,11 @@ header{
     background-color: #fff;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+}
+
 .navLogo{
     display: block;
 }

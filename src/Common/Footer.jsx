@@ -1,11 +1,37 @@
-import React, { useState, useRef } from 'react';
+import React, {useState, useEffect, useRef} from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import '../css/Footer.css'
 import whiteIcon from '../Assets/svg/logoIcon.svg'
 import { AiOutlineArrowDown } from 'react-icons/ai';
 
+gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
 
+  let footerElement = useRef(null)
+  let footerElementText = useRef(null)
   const year = new Date().getFullYear();
+
+  useEffect(() => {
+
+    gsap.timeline()
+      .fromTo(footerElement.current, 
+    {scale: 0, opacity:0}, 
+    {scale:.8, 
+      opacity:1,
+      ease: "back.out",
+      scrollTrigger: {
+        trigger: footerElement.current,
+        start: "1px 100%", 
+        end: "bottom 1%",
+        toggleActions: 'restart pause reverse reset',
+        scrub: true,
+      } 
+    })
+
+  }, [])
+
 
   const [isVisible1, setIsVisible1] = useState(false)
   const linkRef1 = useRef(null);
@@ -35,7 +61,7 @@ const Footer = () => {
   return (
     <div id='footer' className='py-12 px-12'>
       <div id="topFooter" >
-        <div className="topFooterSubSection  text-center">
+        <div className="topFooterSubSection  text-center" ref={footerElement}>
           <h3 className='font-bold text-4xl	mb-8'>Find your techies now.</h3>
           <div className="subscribeInput">
             <button className='font-semibold' >Secure your spot, it’s free</button>
@@ -117,7 +143,7 @@ const Footer = () => {
         </div>
       </div>
       <div id="bottomFooter">
-        <div className='text flex gap-2 mr-4 font-semibold'>
+        <div className='text flex gap-2 mr-4 font-semibold' >
           <p>@SkillMatch</p>
           <p>{year}</p>
         </div>

@@ -1,7 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import '../css/FAQ.css'
 
+
+gsap.registerPlugin(ScrollTrigger);
 const FAQ = () => {
 
   const [isVisible1, setIsVisible1] = useState(false)
@@ -28,14 +32,51 @@ const FAQ = () => {
       setIsVisible4(!isVisible4)
   }
 
+  let faqTitle = useRef(null)
+  let faqText = useRef(null)
+
+  useEffect(() => {
+
+    gsap.timeline()
+      .fromTo(faqTitle.current, 
+      {scale: 0, opacity:0}, 
+      {scale:.8, 
+        opacity:1,
+        ease: "back.out",
+        scrollTrigger: {
+          trigger: faqTitle.current,
+          start: "1px 100%", 
+          end: "bottom 1%",
+          toggleActions: 'restart pause reverse reset',
+          scrub: true,
+        } 
+      })
+      
+      gsap.fromTo(faqText.current, 
+        {opacity: 0, y:150, }, 
+        {opacity:1,
+          duration: 5, 
+          y:0,
+          ease: "back.out",
+          scrollTrigger: {
+            trigger: faqText.current,
+            start: "1px 100%", 
+            end: "bottom  60%",
+            toggleActions: 'restart pause reverse reset',
+            scrub: true,
+          } 
+        })
+      
+  }, [])
+
   return (
-    <div id='faq-page'>
-      <section className='faq-page-time'>
+    <div id='faq-page' className='overflow-hidden'>
+      <section className='faq-page-time' ref={faqTitle}>
         <h2>Frequently Asked Questions</h2>
         <p>Answers to questions you have about SkillMatch</p>
       </section>
 
-      <section id="" className='flex text-base	text-left flex-col'>
+      <section id="" className='flex text-base	text-left flex-col opacity-0' ref={faqText}>
         <ul className='flex gap-4 flex-col mb-8'>
           <div onClick={toggleVisibility1} className='line flex items-center font-semibold justify-between'>
             <p>What is SkillMatch?</p>
