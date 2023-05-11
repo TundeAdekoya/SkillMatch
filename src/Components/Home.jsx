@@ -78,6 +78,7 @@ const Home = () => {
           scale:.8,
           ease: "back.out",
           scrollTrigger: {
+            markers:true,
             trigger: belowTheFoldText.current,
             start: "1px 100%", 
             end: "bottom  60%",
