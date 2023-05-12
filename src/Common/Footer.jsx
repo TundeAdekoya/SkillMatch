@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import '../css/Footer.css'
-import '../css/Font.css'
 import whiteIcon from '../Assets/svg/logoIcon.svg'
 import { AiOutlineArrowDown } from 'react-icons/ai';
 
@@ -10,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
 
   let footerElement = useRef(null)
-  let footerElementText = useRef(null)
+  let footerButtonElement = useRef(null)
   const year = new Date().getFullYear();
 
   useEffect(() => {
@@ -23,6 +22,19 @@ const Footer = () => {
       ease: "back.out",
       scrollTrigger: {
         trigger: footerElement.current,
+        start: "1px 100%", 
+        end: "bottom 1%",
+        toggleActions: 'restart pause reverse reset',
+        scrub: true,
+      } 
+    })
+      .fromTo(footerButtonElement.current, 
+    {opacity:0}, 
+    {
+      opacity:1,
+      ease: "back.out",
+      scrollTrigger: {
+        trigger: footerButtonElement.current,
         start: "1px 100%", 
         end: "bottom 1%",
         toggleActions: 'restart pause reverse reset',
@@ -60,14 +72,14 @@ const Footer = () => {
 
   return (
     <div id='footer' className='py-12 px-12 overflow-hidden' >
-      <div id="topFooter" >
-        <div className="topFooterSubSection  text-center" ref={footerElement} style={{ fontFamily: "MabryProBlack" }}>
-          <h3 className='font-bold text-4xl	mb-8' >Find your techies now.</h3>
-          <div className="subscribeInput">
+      <div id="topFooter" ref={footerButtonElement}>
+        <div className="topFooterSubSection  text-center" style={{ fontFamily: "MabryProBlack" }}>
+          <h3 className='font-bold text-4xl	mb-8' ref={footerElement} >Find your techies now.</h3>
+          <div className="subscribeInput" >
             <button className='' style={{ fontFamily: "MabryProBold" }}>Secure your spot, it’s free</button>
           </div>
         </div>
-        <div id="toFooterLinkSection" className='flex text-base	text-center' style={{ fontFamily: "MabryProRegular" }}>
+        <div id="toFooterLinkSection" className='flex text-base	text-center' style={{ fontFamily: "MabryProRegular" }} >
               <ul className='web flex gap-4 flex-col drop-menu' >
                 <li className='font-semibold' style={{ fontFamily: "MabryProBold" }}>SkillMatch</li>
                 <li>Developer</li>

@@ -1,6 +1,5 @@
-import {React, useEffect, useState, useRef} from 'react'
+import {React, useEffect, useRef} from 'react'
 import '../css/Talent.css'
-import '../css/Font.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import roundtwoimage1 from '../Assets/png/2nd round/one.png'

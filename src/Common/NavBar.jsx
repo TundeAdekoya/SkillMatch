@@ -1,12 +1,11 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useRef, useEffect} from 'react'
 import mobileLogo from '../Assets/svg/miniIcon2.svg'
 import mainLogo from '../Assets/svg/icon.svg'
 import { Link, NavLink} from 'react-router-dom'
-import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
+import {FaBars, FaTimes} from'react-icons/fa'
 import {BsFillPersonFill} from'react-icons/bs'
 import '../css/NavBar.css'
-import '../css/Font.css'
-import {Elastic, gsap, Back } from 'gsap'
+import {Elastic, gsap} from 'gsap'
 
 const NavBar = () => {
     let logoItemWeb = useRef(null)

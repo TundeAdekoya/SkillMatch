@@ -1,6 +1,5 @@
-import {React, useEffect, useState, useRef} from 'react'
+import {React, useEffect, useRef} from 'react'
 import '../css/Developer.css'
-import '../css/Font.css'
 import searchIcon from '../Assets/svg/searchIcon.svg'
 import getIcon from '../Assets/svg/getIcon.svg'
 import person from '../Assets/svg/Person.svg'

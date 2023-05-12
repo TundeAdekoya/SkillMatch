@@ -1,6 +1,5 @@
-import {React, useState, useEffect, useRef} from 'react'
+import {React, useEffect, useRef} from 'react'
 import '../css/Product.css'
-import '../css/Font.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

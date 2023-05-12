@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap'
-import '../css/Font.css'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import '../css/FAQ.css'
