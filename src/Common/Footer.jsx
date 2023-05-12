@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import '../css/Footer.css'
+import '../css/Font.css'
 import whiteIcon from '../Assets/svg/logoIcon.svg'
 import { AiOutlineArrowDown } from 'react-icons/ai';
 
@@ -18,7 +18,7 @@ const Footer = () => {
     gsap.timeline()
       .fromTo(footerElement.current, 
     {scale: 0, opacity:0}, 
-    {scale:.8, 
+    {scale:1, 
       opacity:1,
       ease: "back.out",
       scrollTrigger: {
@@ -59,17 +59,17 @@ const Footer = () => {
   };
 
   return (
-    <div id='footer' className='py-12 px-12'>
+    <div id='footer' className='py-12 px-12 overflow-hidden' >
       <div id="topFooter" >
-        <div className="topFooterSubSection  text-center" ref={footerElement}>
-          <h3 className='font-bold text-4xl	mb-8'>Find your techies now.</h3>
+        <div className="topFooterSubSection  text-center" ref={footerElement} style={{ fontFamily: "MabryProBlack" }}>
+          <h3 className='font-bold text-4xl	mb-8' >Find your techies now.</h3>
           <div className="subscribeInput">
-            <button className='font-semibold' >Secure your spot, it’s free</button>
+            <button className='' style={{ fontFamily: "MabryProBold" }}>Secure your spot, it’s free</button>
           </div>
         </div>
-        <div id="toFooterLinkSection" className='flex text-base	text-center'>
-              <ul className='web flex gap-4 flex-col drop-menu'>
-                <li className='font-semibold'>SkillMatch</li>
+        <div id="toFooterLinkSection" className='flex text-base	text-center' style={{ fontFamily: "MabryProRegular" }}>
+              <ul className='web flex gap-4 flex-col drop-menu' >
+                <li className='font-semibold' style={{ fontFamily: "MabryProBold" }}>SkillMatch</li>
                 <li>Developer</li>
                 <li>Product</li>
                 <li>Talent</li>
@@ -77,18 +77,18 @@ const Footer = () => {
               </ul>
 
               <ul className='web flex gap-4 flex-col'>
-                <li className='font-semibold'>Talent</li>
+                <li className='font-semibold' style={{ fontFamily: "MabryProBold" }}>Talent</li>
                 <li>How - to - SkillMatch</li>
                 <li>Partners</li>
               </ul>
 
               <ul className='web flex gap-4 flex-col'>
-                <li className='font-semibold'>Contact</li>
+                <li className='font-semibold' style={{ fontFamily: "MabryProBold" }}>Contact</li>
                 <li>Email</li>
               </ul>
               
               <ul className='mobile flex gap-4 flex-col'>
-                <div onClick={toggleVisibility1} className='flex items-center font-semibold justify-between'>
+                <div onClick={toggleVisibility1} className='flex items-center justify-between'>
                   <p>SkillMatch </p>
                   <div className='cursor-pointer'><AiOutlineArrowDown /></div>
                 </div>
@@ -106,7 +106,7 @@ const Footer = () => {
               </ul>
               
               <ul className='mobile flex gap-4 flex-col mt-3'>
-              <div onClick={toggleVisibility2} className='flex items-center font-semibold justify-between'>
+              <div onClick={toggleVisibility2} className='flex items-center justify-between'>
                   <p>Talent</p>
                   <div className='cursor-pointer'><AiOutlineArrowDown /></div>
                 </div>
@@ -124,7 +124,7 @@ const Footer = () => {
               </ul>
 
               <ul className='mobile flex gap-4 flex-col mt-3'>
-              <div onClick={toggleVisibility3} className='flex items-center font-semibold justify-between'>
+              <div onClick={toggleVisibility3} className='flex items-center  justify-between'>
                   <p>Contact</p>
                   <div className='cursor-pointer'><AiOutlineArrowDown /></div>
                 </div>
@@ -142,8 +142,8 @@ const Footer = () => {
               </ul>
         </div>
       </div>
-      <div id="bottomFooter">
-        <div className='text flex gap-2 mr-4 font-semibold' >
+      <div id="bottomFooter" style={{ fontFamily: "MabryProRegular" }}>
+        <div className='text flex gap-2 mr-4 ' >
           <p>@SkillMatch</p>
           <p>{year}</p>
         </div>

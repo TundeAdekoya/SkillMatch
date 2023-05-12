@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import '../css/Home.css'
+import '../css/Font.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -100,9 +101,9 @@ const Home = () => {
 
       <main id="above-the-fold" className='flex items-center justify-center flex-col my-10' ref={aboveTheFoldText}>
         <div className="text-section mb-9">
-          <h1  className='flex flex-col'>levelling the playing <span> field for <b>Techies</b></span></h1>
+          <h1  className='flex flex-col' style={{ fontFamily: "MabryProRegular" }}>Levelling the playing <span> field for <b style={{ fontFamily: "MabryProBlack" }}>Techies</b></span></h1>
         </div>
-        <button ref={button}>Be among the first, it’s free</button>
+        <button ref={button} style={{ fontFamily: "MabryProBold" }}>Be among the first, it’s free</button>
       </main>
 
      <section id="home-page-image-section" className='flex items-center justify-center' ref={aboveTheFoldImage}>
@@ -132,9 +133,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="below-the-fold" className='flex flex-col justify-center items-center opacity-0' ref={belowTheFoldText}>
+      <section id="below-the-fold" className='flex flex-col justify-center items-center opacity-0' ref={belowTheFoldText} style={{ fontFamily: "MabryProBold" }}>
         <div className="below-the-fold-text mx-auto" >
-          <h2 className='flex flex-col font-semibold'>
+          <h2 className='flex flex-col '>
             <span className=''>Prove ownership of your GitHub, Behance,</span>
             <span className=''>Dribble and Stack Overflow profile and check</span>  
             <span className='mb-10'>your ranking against other talents for free.</span>

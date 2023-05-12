@@ -35,3 +35,10 @@
     }
 
 }
+
+@media(max-width:599px){
+    .dev-content-text{
+        display: inline-block;
+        width: 98%;
+    }
+}

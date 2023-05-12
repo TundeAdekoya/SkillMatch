@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'MabryProBold';
+    src: url('../font/MabryPro-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'MabryProMedium';
+    src: url('../font/MabryPro-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'MabryProBlack';
+    src: url('../font/MabryPro-Black.ttf');
+  }
+  
+  @font-face {
+    font-family: 'MabryProLight';
+    src: url('../font/MabryPro-Light.ttf');
+  }
+  
+  
+  @font-face {
+    font-family: 'MabryProRegular';
+    src: url('../font/MabryPro-Regular.ttf');
+  }
+  

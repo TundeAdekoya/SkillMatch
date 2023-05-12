@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import '../css/Component.css'
-
+// This page is used  to test code concept and ideas
 
 const Component = () => {
 

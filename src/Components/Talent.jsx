@@ -1,20 +1,14 @@
 import {React, useEffect, useState, useRef} from 'react'
 import '../css/Talent.css'
+import '../css/Font.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import roundoneimage1 from '../Assets/png/1st round/one.png'
-import roundoneimage2 from '../Assets/png/1st round/two.png'
-
 import roundtwoimage1 from '../Assets/png/2nd round/one.png'
 import roundtwoimage2 from '../Assets/png/2nd round/two.png'
-
 import roundthreeimage1 from '../Assets/png/3rd round/one.png'
 import roundthreeimage2 from '../Assets/png/3rd round/two.png'
-
 import roundfourimage1 from '../Assets/png/4th round/one.png'
 import roundfourimage2 from '../Assets/png/4th round/two.png'
-
 import roundfiveimage1 from '../Assets/png/5th round/one.png'
 import roundfiveimage2 from '../Assets/png/5th round/two.png'
 
@@ -45,7 +39,7 @@ const Talent = () => {
   return (
     <div id='talent-page' className='overflow-hidden'>
       <section className="talent-text flex opacity-0" ref={talTitle}>
-        <h2 className='flex flex-col'>
+        <h2 className='flex flex-col' style={{ fontFamily: "MabryProBold" }}>
           <span>Are you in search of the next</span>
           <span>generation of tech talent?</span>
         </h2>

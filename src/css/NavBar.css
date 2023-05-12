@@ -1,3 +1,4 @@
+
 header{
     display: flex;
     align-items: center;
@@ -38,10 +39,7 @@ nav{
     font-weight: 600;
 }
 
-.navCta:hover{
-    transform: scale(.98);
-    transition: 0.3s ease-in-out;
-}
+
 
 .nav-btn{
     display: none;
@@ -148,4 +146,13 @@ nav{
         margin: 2px;
     }
  
+}
+
+
+@media(max-width:559px){
+    .navCta{
+        background-color: #2CBDFF;
+    }
+    
+
 }

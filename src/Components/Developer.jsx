@@ -1,11 +1,11 @@
 import {React, useEffect, useState, useRef} from 'react'
 import '../css/Developer.css'
+import '../css/Font.css'
 import searchIcon from '../Assets/svg/searchIcon.svg'
 import getIcon from '../Assets/svg/getIcon.svg'
 import person from '../Assets/svg/Person.svg'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import discoverimage1 from '../Assets/svg/discoverImage1.svg'
 import discoverimage2 from '../Assets/svg/discoverImage2.svg'
 import discoverimage3 from '../Assets/svg/discoverImage3.svg'
@@ -132,20 +132,20 @@ const Developer = () => {
   return (
     <div id='developer' className='flex items-center justify-center flex-col mt-20'>
       <section id="developer-title" ref={devTitle}>
-        <h2>Discover your techie.</h2>
+        <h2 style={{ fontFamily: "MabryProBold" }}>Discover your techie.</h2>
       </section>
 
       <section id="developer-content">
           <div className='mt-16 overflow-hidden'>
               <section className="developer-content-title opacity-0 " ref={devSubTitleOne}>
-                <div className="dev-icon flex gap-2 items-center mb-2 ">
+                <div className="dev-icon flex gap-2 items-center mb-2 " style={{ fontFamily: "MabryProRegular" }}>
                   <div className="dev-image-container">
                    <img src={searchIcon} alt="" />
                   </div>
                   <h3>Search</h3>
                 </div>
-                <div className="dev-content-title-text">
-                <p className='flex flex-col'>
+                <div className="dev-content-title-text" style={{ fontFamily: "MabryProLight" }}>
+                <p className='dev-content-text flex flex-col'>
                   <span>Enter the username of the talent</span> <span>you are seeking to recruit.</span>
                   </p>
                 </div>
@@ -159,14 +159,14 @@ const Developer = () => {
       <section id="developer-content">
           <div className='mt-24 overflow-hidden'>
               <section className="developer-content-title opacity-0" ref={devSubTitleTwo}>
-                <div className="dev-icon flex gap-2 items-center mb-2">
+                <div className="dev-icon flex gap-2 items-center mb-2" style={{ fontFamily: "MabryProRegular" }}>
                   <div className="dev-image-container">
                     <img src={getIcon} alt="" />
                   </div>  
                   <h3>Get</h3>
                 </div>
-                <div className="dev-content-title-text">
-                  <p className='flex flex-col'>
+                <div className="dev-content-title-text" style={{ fontFamily: "MabryProLight" }}>
+                  <p className='dev-content-text flex flex-col'>
                     <span>Learn more about the talent whose level of </span>
                     <span>experience aligns with your requirements.</span>
                   </p>
@@ -181,14 +181,14 @@ const Developer = () => {
       <section id="developer-content">
           <div className='mt-24 overflow-hidden'>
               <section className="developer-content-title	opacity-0" ref={devSubTitleThree}>
-              <div className="dev-icon flex gap-2 items-center mb-2">
+              <div className="dev-icon flex gap-2 items-center mb-2" style={{ fontFamily: "MabryProRegular" }}>
                   <div className="dev-image-container">
                     <img src={person}  alt="" />
                   </div>  
                   <h3>Find your Candidate</h3>
                 </div>
-                <div className="dev-content-title-text">
-                  <p className='flex flex-col'>
+                <div className="dev-content-title-text" style={{ fontFamily: "MabryProLight" }}>
+                  <p className='dev-content-text flex flex-col'>
                     <span>Stop settling for mediocre talent. Take action today to </span>
                     <span>find the perfect candidate for your team's success.</span>
                   </p>

@@ -5,6 +5,7 @@ import { Link, NavLink} from 'react-router-dom'
 import {FaBars, FaTimes, FaPlus} from'react-icons/fa'
 import {BsFillPersonFill} from'react-icons/bs'
 import '../css/NavBar.css'
+import '../css/Font.css'
 import {Elastic, gsap, Back } from 'gsap'
 
 const NavBar = () => {
@@ -55,13 +56,13 @@ const NavBar = () => {
             <img ref={logoItemMobile} src={mobileLogo} alt="" />
         </div>
 
-        <nav ref={navRef}> 
+        <nav ref={navRef} style={{ fontFamily: "MabryProRegular" }}> 
             <NavLink className='navbarLinksMenu' to='/'><p ref={menu1}>Developer</p>
             </NavLink>
             <NavLink className='navbarLinksMenu' ref={menu2} to='/'><p ref={menu2}>Product</p></NavLink>
             <NavLink className='navbarLinksMenu' ref={menu3} to='/'><p ref={menu3}>Talent</p></NavLink>
             <NavLink className='navbarLinksMenu' ref={menu4} to='/'><p ref={menu4}>FAQ</p></NavLink>
-            <Link to='/'><button className='navCta font-bold'  ref={webCta} >Join Waitlist</button></Link>
+            <Link to='/'><button className='navCta font-bold'  ref={webCta} style={{ fontFamily: "MabryProBold" }}>Join Waitlist</button></Link>
             <button className= 'nav-btn nav-close-btn'  onClick={showNavbar}
             ><FaTimes/></button>
         </nav>

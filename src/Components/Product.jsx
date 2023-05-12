@@ -1,5 +1,6 @@
 import {React, useState, useEffect, useRef} from 'react'
 import '../css/Product.css'
+import '../css/Font.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -85,14 +86,14 @@ const Product = () => {
       <div className="product-container flex gap-3">
         <section className="green flex items-center justify-center" ref={topLeft}>
           <div className="product-text">
-            <h1>50<span>+</span></h1>
-            <h3>Designer Profiles processed</h3>
+            <h1 style={{ fontFamily: "MabryProBlack" }}>50<span>+</span></h1>
+            <h3 style={{ fontFamily: "MabryProRegular" }}>Designer Profiles processed</h3>
           </div>
         </section>
         <section className="cyan flex items-center justify-center" ref={topRight}>
           <div className="product-text">
-              <h1>50<span>+</span></h1>
-              <h3>Developer Profiles processed</h3>
+              <h1 style={{ fontFamily: "MabryProBlack" }}>50<span>+</span></h1>
+              <h3 style={{ fontFamily: "MabryProRegular" }}>Developer Profiles processed</h3>
             </div>
         </section>
       </div>
@@ -100,14 +101,14 @@ const Product = () => {
       <div className="product-container flex gap-3">
         <section className="blue flex items-center justify-center" ref={bottomLeft}>
           <div className="product-text">
-              <h1>60<span>+</span></h1>
-              <h3>Happy users</h3>
+              <h1 style={{ fontFamily: "MabryProBlack" }}>60<span>+</span></h1>
+              <h3 style={{ fontFamily: "MabryProRegular" }}>Happy users</h3>
           </div>
         </section>
         <section className="purple flex items-center justify-center"  ref={bottomRight}>
           <div className="product-text">
-              <h1>3<span>secs</span></h1>
-              <h3>API processing</h3>
+              <h1 style={{ fontFamily: "MabryProBlack" }}>3<span>secs</span></h1>
+              <h3 style={{ fontFamily: "MabryProRegular" }}>API processing</h3>
           </div>
         </section>
       </div>
