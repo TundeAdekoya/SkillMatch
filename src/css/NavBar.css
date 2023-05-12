@@ -153,6 +153,10 @@ nav{
     .navCta{
         background-color: #2CBDFF;
     }
+
+    .navbarLinksMenu{
+        font-size: 32px;
+    }
     
 
 }
