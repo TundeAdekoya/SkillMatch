@@ -100,7 +100,7 @@ const Home = () => {
 
       <main id="above-the-fold" className='flex items-center justify-center flex-col my-10' ref={aboveTheFoldText}>
         <div className="text-section mb-9">
-          <h1  className='flex flex-col' style={{ fontFamily: "MabryProRegular" }}>Levelling the playing <span>field for <b style={{ fontFamily: "MabryProBlack" }}>Techies</b></span></h1>
+          <h1  className='flex flex-col' style={{ fontFamily: "MabryProMedium" }}>Levelling the playing <span>field for <b style={{ fontFamily: "MabryProBlack" }}>Techies</b></span></h1>
         </div>
         <button ref={button} style={{ fontFamily: "MabryProBold" }}>Be among the first, it’s free</button>
       </main>
