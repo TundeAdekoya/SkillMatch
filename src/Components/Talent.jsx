@@ -38,8 +38,8 @@ const Talent = () => {
   return (
     <div id='talent-page' className='overflow-hidden'>
       <section className="talent-text flex opacity-0" ref={talTitle}>
-        <h2 className='flex flex-col' style={{ fontFamily: "MabryProBold" }}>
-          <span>Are you in search of the next</span>
+        <h2 className='talent-text-content flex flex-col' style={{ fontFamily: "MabryProBold" }}>
+          <span>Are you in search of the next </span>
           <span>generation of tech talent?</span>
         </h2>
       </section>

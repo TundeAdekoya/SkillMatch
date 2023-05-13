@@ -88,11 +88,12 @@
 }
 
 
-@media(max-width:500px){
+@media(max-width:599px){
 
-    .talent-text h2{
-        font-size: 28px;    
-    }
+    .talent-text-content{
+        display: inline-block;
+        width: 98%;
+    } 
 
     .talent-container {
         height: 10rem;

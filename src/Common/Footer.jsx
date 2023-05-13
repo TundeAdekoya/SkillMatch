@@ -74,7 +74,7 @@ const Footer = () => {
     <div id='footer' className='py-12 px-12 overflow-hidden' >
       <div id="topFooter" ref={footerButtonElement}>
         <div className="topFooterSubSection  text-center" style={{ fontFamily: "MabryProBlack" }}>
-          <h3 className='font-bold text-4xl	mb-8' ref={footerElement} >Find your techies now.</h3>
+          <h3 className=' text-4xl	mb-8' ref={footerElement} >Find your techies now.</h3>
           <div className="subscribeInput" >
             <button className='' style={{ fontFamily: "MabryProBold" }}>Secure your spot, it’s free</button>
           </div>

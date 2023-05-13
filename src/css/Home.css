@@ -117,7 +117,7 @@
     }
 
     #home-page-image-section {
-        margin: 48px 24px 48px 24px;
+        margin: 48px 16px 48px 16px;
     }
 
     #home-page-image-section img{
@@ -127,21 +127,29 @@
     }
 
     .below-the-fold-text h2{
-        font-size: 24px;
+        font-size: 28px;
+        margin-bottom: 48px;
     }
   
     #below-the-fold{
-        margin: 0px 48px 48px 48px;
+        margin: 0px 16px 0px 16px;
     }
+
+    
+  .below-the-fold-text-context{
+    display: inline-block;
+    width: 98%;
+  }
 
 }
   
-@media(max-width:500px){
+@media(max-width:599px){
   .partner-container {
-    margin: 48px auto;
+    /* margin: 48px auto; */
   }
 
   .partner img {
     width: 25%;
   }
+
 }  
