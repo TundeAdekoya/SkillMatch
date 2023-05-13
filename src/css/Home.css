@@ -6,14 +6,14 @@
 #above-the-fold h1{
   font-size: 64px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
 }
   
 #above-the-fold h1 b{
   background: linear-gradient(90deg, #0083D4, #3F3EED);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
+  font-weight: 800;
 }
   
 #above-the-fold button{
