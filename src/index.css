@@ -15,27 +15,32 @@
 @font-face {
   font-family: 'MabryProBold';
   src: url('./font/MabryPro-Bold.woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'MabryProMedium';
   src: url('./font/MabryPro-Medium.woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'MabryProBlack';
   src: url('./font/MabryPro-Black.woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'MabryProLight';
   src: url('./font/MabryPro-Light.woff');
+  font-display: swap;
 }
 
 
 @font-face {
   font-family: 'MabryProRegular';
   src: url('./font/MabryPro-Regular.woff');
+  font-display: swap;
 }
 
 
