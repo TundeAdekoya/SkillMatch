@@ -88,3 +88,9 @@
     }
 
 }
+
+@media(max-width:599px){
+    .topFooterSubSection h3{ 
+        /* text-align: left; */
+    }
+}

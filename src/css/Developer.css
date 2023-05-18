@@ -39,4 +39,8 @@
         display: inline-block;
         width: 98%;
     }
+
+    #developer-title h2{
+        text-align:left;
+    }
 }

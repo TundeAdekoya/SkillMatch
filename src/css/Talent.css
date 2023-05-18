@@ -102,5 +102,9 @@
     .talent img {
         height: 10rem;
     }
+
+    .talent-text h2{
+        text-align: left;
+    }
     
 }
