@@ -56,12 +56,12 @@ const NavBar = () => {
         </div>
 
         <nav ref={navRef} style={{ fontFamily: "MabryProRegular" }}> 
-            <NavLink className='navbarLinksMenu' to='/'><p ref={menu1}>Developer</p>
+            <NavLink className='navbarLinksMenu'  onClick={showNavbar} to='/'><p ref={menu1}>Developer</p>
             </NavLink>
-            <NavLink className='navbarLinksMenu' ref={menu2} to='/'><p ref={menu2}>Product</p></NavLink>
-            <NavLink className='navbarLinksMenu' ref={menu3} to='/'><p ref={menu3}>Talent</p></NavLink>
-            <NavLink className='navbarLinksMenu' ref={menu4} to='/'><p ref={menu4}>FAQ</p></NavLink>
-            <Link to='/'><button className='navCta font-bold'  ref={webCta} style={{ fontFamily: "MabryProBold" }}>Join Waitlist</button></Link>
+            <NavLink className='navbarLinksMenu' ref={menu2} onClick={showNavbar}  to='/'><p ref={menu2}>Product</p></NavLink>
+            <NavLink className='navbarLinksMenu' ref={menu3}  onClick={showNavbar} to='/'><p ref={menu3}>Talent</p></NavLink>
+            <NavLink className='navbarLinksMenu' ref={menu4}  onClick={showNavbar} to='/'><p ref={menu4}>FAQ</p></NavLink>
+            <Link to='/'><button className='navCta font-bold' onClick={showNavbar} ref={webCta} style={{ fontFamily: "MabryProBold" }}>Join Waitlist</button></Link>
             <button className= 'nav-btn nav-close-btn'  onClick={showNavbar}
             ><FaTimes/></button>
         </nav>
